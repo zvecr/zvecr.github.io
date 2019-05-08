@@ -2,7 +2,7 @@ language: node_js
 
 branches:
   except:
-    - gh-pages 
+    - master
 
 script:
   - npm run build
@@ -14,5 +14,6 @@ deploy:
   fqdn: www.zvecr.com
   keep_history: true
   local_dir: dist
+  target_branch: master
   on:
-    branch: master
+    branch: develop
