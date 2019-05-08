@@ -1,0 +1,38 @@
+<template>
+  <v-footer dark height="auto">
+    <v-card class="flex" flat tile>
+      <v-card-text flat tile class="secondary lighten-1 white--text text-xs-center">
+        <v-btn icon href="https://github.com/zvecr">
+          <v-icon>fab fa-github</v-icon>
+        </v-btn>
+        <v-btn icon href="mailto:info@zvecr.com">
+          <v-icon
+            @mouseover="mailHovering = true"
+            @mouseout="mailHovering = false"
+          >fas {{ mailHovering ? 'fa-envelope-open' : 'fa-envelope' }}</v-icon>
+        </v-btn>
+      </v-card-text>
+
+      <v-card-actions class="secondary justify-center">
+        &copy; {{ new Date().getFullYear() }}&nbsp;-&nbsp;
+        <strong>zvecr.com</strong>
+      </v-card-actions>
+    </v-card>
+  </v-footer>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      mailHovering: false,
+    };
+  },
+};
+</script>
+
+<style>
+footer {
+  user-select: none;
+}
+</style>
