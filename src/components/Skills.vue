@@ -1,8 +1,13 @@
 <template>
   <v-container fluid grid-list-md class="primary lighten-2 white--text">
     <h2 class="text-xs-center">Skills</h2>
-    <v-layout style="padding-top: 2em;" :row="$vuetify.breakpoint.mdAndUp" :column="$vuetify.breakpoint.smAndDown" wrap>
-      <v-flex xs4 v-for="skill in skills" :key="skill">
+    <v-layout
+      :pt-5="$vuetify.breakpoint.mdAndUp"
+      :row="$vuetify.breakpoint.mdAndUp"
+      :column="$vuetify.breakpoint.smAndDown"
+      wrap
+    >
+      <v-flex xs4 v-for="skill in skills" :key="skill" :pt-5="$vuetify.breakpoint.smAndDown">
         <v-card height="100%">
           <v-card-title class="justify-center">
             <div class="headline">{{skill.name}}</div>
@@ -27,23 +32,39 @@ export default {
     return {
       skills: {
         frontend: {
-          name: "Frontend",
-          icon: "far fa-window-maximize",
-          sub: ["Javascript", "VueJs", "JSP", "Keycloak", "Phonegap/Cordova"]
+          name: 'Frontend',
+          icon: 'far fa-window-maximize',
+          sub: ['Javascript', 'VueJs', 'JSP', 'Keycloak', 'Phonegap/Cordova'],
         },
         backend: {
-          name: "Backend",
-          icon: "fas fa-server",
-          sub: ["Java", "Spring", "C++", "Boost", "Swagger", "Postgres", "SQLite"]
+          name: 'Backend',
+          icon: 'fas fa-server',
+          sub: [
+            'Java',
+            'Spring',
+            'C++',
+            'Boost',
+            'Swagger',
+            'Postgres',
+            'SQLite',
+          ],
         },
         other: {
-          name: "Other",
-          icon: "fas fa-cogs",
-          sub: ["Cucumber", "Bash", "Python", "Jenkins", "Travis-ci", "Git/SVN", "Vagrant"]
-        }
-      }
+          name: 'Other',
+          icon: 'fas fa-cogs',
+          sub: [
+            'Cucumber',
+            'Bash',
+            'Python',
+            'Jenkins',
+            'Travis-ci',
+            'Git/SVN',
+            'Vagrant',
+          ],
+        },
+      },
     };
-  }
+  },
 };
 </script>
 
