@@ -9,7 +9,7 @@
     "lint:md": "remark ."
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.2",
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "core-js": "^3.0.1",
     "typeface-roboto": "0.0.54",
     "vue": "^2.6.10",
