@@ -7,7 +7,7 @@
       :column="$vuetify.breakpoint.smAndDown"
       wrap
     >
-      <v-flex xs4 v-for="project in projects" :key="project.name">
+      <v-flex xs4 sm6 v-for="project in projects" :key="project.name">
         <v-card round height="100%" class="flexcard">
           <v-toolbar dark color="secondary lighten-1">
             <v-toolbar-title>{{project.name}}</v-toolbar-title>

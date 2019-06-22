@@ -7,7 +7,7 @@
       :column="$vuetify.breakpoint.smAndDown"
       wrap
     >
-      <v-flex xs4 v-for="skill in skills" :key="skill" :pt-5="$vuetify.breakpoint.smAndDown">
+      <v-flex xs4 v-for="(skill,group) in skills" :key="group" :pt-5="$vuetify.breakpoint.smAndDown">
         <v-card height="100%">
           <v-card-title class="justify-center">
             <div class="headline">{{skill.name}}</div>
