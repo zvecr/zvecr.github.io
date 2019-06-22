@@ -44,9 +44,9 @@ export default {
           proj: 'https://github.com/qmk/qmk_firmware/pulls/zvecr',
         },
         {
-          name: 'jmeter-smtp-server-plugin',
-          desc: 'Self contained, pure java SMTP server hosted directly within JMeter. Aligned with the default SMTP sampler, the plugin provides support for various configuration including SMTP auth and TLS.',
-          proj: 'https://github.com/zvecr/jmeter-smtp-server-plugin',
+          name: 'Keyboard Tools',
+          desc: 'Work-in-Progress. Cross-platform Node.js ports of various keyboard tools.',
+          proj: 'https://github.com/zvecr/Keyboard-Tools',
         },
         {
           name: 'vue-scxml-router',
@@ -54,9 +54,9 @@ export default {
           proj: 'https://github.com/zvecr/vue-scxml-router',
         },
         {
-          name: 'Keyboard Tools',
-          desc: 'Work-in-Progress. Cross-platform Node.js ports of various keyboard tools.',
-          proj: 'https://github.com/zvecr/Keyboard-Tools',
+          name: 'jmeter-smtp-server-plugin',
+          desc: 'Self contained, pure java SMTP server hosted directly within JMeter. Aligned with the default SMTP sampler, the plugin provides support for various configuration including SMTP auth and TLS.',
+          proj: 'https://github.com/zvecr/jmeter-smtp-server-plugin',
         },
       ],
     };
