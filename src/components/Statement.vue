@@ -8,11 +8,7 @@
       </v-flex>
       <v-flex xs8>
         <blockquote class="blockquote">
-          A highly focused software developer with 10 years enterprise experience spanning the full stack.
-          <br>
-          <br>
-          Possessing a high level of intrigue and determination, a methodical approach and excellent problem solving skills.
-          Skills which have led to a proven track record of delivering complex applications against critical deadlines.
+          <span>{{ statement }}</span>
         </blockquote>
       </v-flex>
     </v-layout>
@@ -20,8 +16,22 @@
 </template>
 
 <script>
-export default {};
+/* eslint-disable max-len */
+export default {
+  data() {
+    return {
+      statement:
+        'A highly focused software developer with 10 years enterprise experience spanning the full stack.'
+        + '\n\n'
+        + 'Possessing a high level of intrigue and determination, a methodical approach and excellent problem solving skills.'
+        + 'Skills which have led to a proven track record of delivering complex applications against critical deadlines.',
+    };
+  },
+};
 </script>
 
-<style>
+<style scoped>
+blockquote > span {
+  white-space: pre-wrap;
+}
 </style>
