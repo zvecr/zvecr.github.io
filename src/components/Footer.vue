@@ -1,7 +1,7 @@
 <template>
-  <v-footer dark height="auto">
-    <v-card class="flex" flat tile>
-      <v-card-text flat tile class="secondary lighten-1 white--text text-xs-center">
+  <v-footer dark padless>
+    <v-card flat tile width="100%" class="secondary lighten-1 white--text text-center">
+      <v-card-text flat tile>
         <v-btn icon href="https://github.com/zvecr">
           <v-icon>fab fa-github</v-icon>
         </v-btn>
