@@ -7,9 +7,7 @@
         </v-avatar>
       </v-flex>
       <v-flex xs8>
-        <blockquote class="blockquote">
-          <span>{{ statement }}</span>
-        </blockquote>
+        <blockquote class="blockquote">{{ statement }}</blockquote>
       </v-flex>
     </v-layout>
   </v-container>
@@ -31,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-blockquote > span {
+blockquote {
   white-space: pre-wrap;
 }
 </style>
