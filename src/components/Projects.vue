@@ -15,8 +15,8 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn flat color="orange" v-if="project.link" :href="project.link">Visit</v-btn>
-            <v-btn flat color="orange" :href="project.proj">View</v-btn>
+            <v-btn text color="orange" v-if="project.link" :href="project.link">Visit</v-btn>
+            <v-btn text color="orange" :href="project.proj">View</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>

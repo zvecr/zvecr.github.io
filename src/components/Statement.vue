@@ -23,7 +23,7 @@ export default {
       statement:
         'A highly focused software developer with 10 years enterprise experience spanning the full stack.'
         + '\n\n'
-        + 'Possessing a high level of intrigue and determination, a methodical approach and excellent problem solving skills.'
+        + 'Possessing a high level of intrigue and determination, a methodical approach and excellent problem solving skills. '
         + 'Skills which have led to a proven track record of delivering complex applications against critical deadlines.',
     };
   },
