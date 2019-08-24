@@ -7,15 +7,18 @@
       :column="$vuetify.breakpoint.smAndDown"
       wrap
     >
-      <v-flex xs4 v-for="(skill,group) in skills" :key="group" :pt-5="$vuetify.breakpoint.smAndDown">
+      <v-flex
+        xs4 v-for="(skill,group) in skills" :key="group"
+        :pt-10="$vuetify.breakpoint.smAndDown"
+      >
         <v-card height="100%">
-          <v-card-title class="justify-center">
+          <v-card-title class="justify-center primary--text">
             <div class="headline">{{skill.name}}</div>
           </v-card-title>
           <v-btn color="orange" dark small absolute top right fab large>
             <v-icon>{{skill.icon}}</v-icon>
           </v-btn>
-          <v-card-text>
+          <v-card-text class="primary--text">
             <ul>
               <li v-for="type in skill.sub" :key="type">{{type}}</li>
             </ul>
@@ -34,7 +37,13 @@ export default {
         frontend: {
           name: 'Frontend',
           icon: 'far fa-window-maximize',
-          sub: ['Javascript', 'VueJs', 'JSP', 'Keycloak', 'Phonegap/Cordova'],
+          sub: [
+            'Javascript',
+            'VueJs',
+            'JSP',
+            'Keycloak',
+            'Phonegap/Cordova',
+          ],
         },
         backend: {
           name: 'Backend',
