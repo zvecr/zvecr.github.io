@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="primary lighten-1 white--text text-xs-center">
+  <v-container fluid class="primary lighten-1 white--text text-center">
     <v-layout align-center justify-center pa-1>
       <v-flex xs4>
         <v-avatar size="100%">

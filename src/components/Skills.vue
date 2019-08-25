@@ -1,6 +1,6 @@
 <template>
   <v-container fluid grid-list-md class="primary lighten-2 white--text">
-    <h2 class="text-xs-center">Skills</h2>
+    <h2 class="text-center">Skills</h2>
     <v-layout
       :pt-5="$vuetify.breakpoint.mdAndUp"
       :row="$vuetify.breakpoint.mdAndUp"

@@ -1,17 +1,12 @@
 <template>
-  <v-container fluid grid-list-md class="primary lighten-1 white--text">
-    <h2 class="text-xs-center">Projects</h2>
-    <v-layout
-      pt-3
-      wrap
-    >
+  <v-container fluid grid-list-md class="primary lighten">
+    <h2 class="text-center white--text">Projects</h2>
+    <v-layout pt-3 wrap>
       <v-flex md4 sm6 xs12 v-for="project in projects" :key="project.name">
         <v-card round height="100%" class="flexcard">
-          <v-toolbar dark color="secondary lighten-1">
-            <v-toolbar-title>{{project.name}}</v-toolbar-title>
-          </v-toolbar>
+          <v-card-title class="secondary lighten-1 white--text">{{project.name}}</v-card-title>
 
-          <v-card-text class="grow">{{project.desc}}</v-card-text>
+          <v-card-text class="pt-2 primary--text grow">{{project.desc}}</v-card-text>
 
           <v-card-actions>
             <v-spacer></v-spacer>
@@ -38,13 +33,18 @@ export default {
         },
         {
           name: 'QMK Firmware',
-          desc: 'Recent QMK Member. Contributions including CI improvements, updating legacy code and style conformance, porting to new/existing hardware and bugfixes, as well as providing general QMK support to end users.',
+          desc: 'Recent QMK Member. Contributions including CI improvements, ARM split project, porting new/existing hardware, updating legacy code and style conformance, and bugfixes, as well as providing general QMK support to end users.',
           proj: 'https://github.com/qmk/qmk_firmware/pulls/zvecr',
         },
         {
           name: 'Keyboard Tools',
           desc: 'Work-in-Progress. Cross-platform Node.js ports of various keyboard tools.',
           proj: 'https://github.com/zvecr/Keyboard-Tools',
+        },
+        {
+          name: 'split_blackpill Keyboard',
+          desc: 'Split ortho_4x12 ARM mechanical keyboard. Produced with KiCad, OSH coming soon!',
+          proj: 'https://zvecr.bigcartel.com/product/split_blackpill',
         },
         {
           name: 'vue-scxml-router',

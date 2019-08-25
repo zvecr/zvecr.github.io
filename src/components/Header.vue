@@ -1,11 +1,14 @@
 <template>
   <v-card class="pa-3 primary lighten-5 white--text">
-    <v-toolbar dark floating color="transparent elevation-0">
+    <v-toolbar dark color="transparent elevation-0">
       <v-btn color="primary" dark href="resume.pdf">
         Download Resume
         <v-icon right>fas fa-download</v-icon>
       </v-btn>
-      <v-spacer></v-spacer>
+      <div class="flex-grow-1"></div>
+      <v-toolbar-items>
+        <v-btn icon @click="$emit('menu')"><v-icon>fas fa-bars</v-icon></v-btn>
+      </v-toolbar-items>
     </v-toolbar>
 
     <v-img src="icon_vector_min_infill.png" contain height="35em" position="right">
