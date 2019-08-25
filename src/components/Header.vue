@@ -11,11 +11,11 @@
       </v-toolbar-items>
     </v-toolbar>
 
-    <v-img src="icon_vector_min_infill.png" contain height="35em" position="right">
+    <v-img src="icon_vector_min_infill.png" contain height="30em" position="right">
       <v-layout pa-2 column fill-height class="lightbox white--text">
         <v-spacer></v-spacer>
         <v-flex pa-1 shrink>
-          <h3 class="display-3">Joel Challis</h3>
+          <h3 class="display-2 font-weight-medium">Joel Challis</h3>
           <h4 class="display-1">Software Engineer</h4>
         </v-flex>
       </v-layout>
