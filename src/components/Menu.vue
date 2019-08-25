@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer right app :value="value" @input="toggle" width="300">
+  <v-navigation-drawer right app temporary :value="value" @input="toggle" width="300">
     <v-layout column fill-height>
       <v-list>
         <v-list-item link href="https://zvecr.bigcartel.com">
