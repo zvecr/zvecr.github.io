@@ -2,7 +2,7 @@
   <v-container fluid grid-list-md class="primary lighten">
     <h2 class="text-center white--text">Projects</h2>
     <v-layout pt-3 wrap>
-      <v-flex md4 sm6 xs12 v-for="project in projects" :key="project.name">
+      <v-flex pa-2 lg4 sm6 xs12 v-for="project in projects" :key="project.name">
         <v-card round height="100%" class="flexcard">
           <v-card-title class="secondary lighten-1 white--text">{{project.name}}</v-card-title>
 

@@ -9,7 +9,7 @@
     >
       <v-flex
         xs4 v-for="(skill,group) in skills" :key="group"
-        :pt-10="$vuetify.breakpoint.smAndDown"
+        pa-2 :pt-10="$vuetify.breakpoint.smAndDown"
       >
         <v-card height="100%">
           <v-card-title class="justify-center primary--text">
