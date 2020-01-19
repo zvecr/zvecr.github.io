@@ -12,9 +12,10 @@
     </v-toolbar>
 
     <v-img src="sticker.png" contain height="30em" position="right"/>
-
-    <h3 class="display-2 font-weight-medium">Joel Challis</h3>
-    <h4 class="display-1">Software Engineer</h4>
+    <div class="pa-3" :class="{'move-up':$vuetify.breakpoint.lgAndUp}">
+      <h3 class="display-2 font-weight-medium">Joel Challis</h3>
+      <h4 class="display-1">Software Engineer</h4>
+    </div>
   </v-card>
 </template>
 
@@ -35,5 +36,8 @@ export default {
 .v-card {
   background-image: url('/cubes.png');
   background-repeat: repeat;
+}
+.move-up {
+  margin-top: -5em;
 }
 </style>
