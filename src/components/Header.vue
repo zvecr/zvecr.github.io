@@ -1,7 +1,7 @@
 <template>
-  <v-card class="pa-3 primary lighten-5 white--text">
+  <v-card class="pa-3 primary white--text">
     <v-toolbar dark color="transparent elevation-0">
-      <v-btn color="primary" dark href="resume.pdf">
+      <v-btn color="secondary" dark href="resume.pdf">
         Download Resume
         <v-icon right>fas fa-download</v-icon>
       </v-btn>
@@ -11,7 +11,7 @@
       </v-toolbar-items>
     </v-toolbar>
 
-    <v-img src="icon_vector_min_infill.png" contain height="30em" position="right">
+    <v-img src="sticker.png" contain height="30em" position="right">
       <v-layout pa-2 column fill-height class="lightbox white--text">
         <v-spacer></v-spacer>
         <v-flex pa-1 shrink>
