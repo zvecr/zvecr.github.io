@@ -11,15 +11,10 @@
       </v-toolbar-items>
     </v-toolbar>
 
-    <v-img src="sticker.png" contain height="30em" position="right">
-      <v-layout pa-2 column fill-height class="lightbox white--text">
-        <v-spacer></v-spacer>
-        <v-flex pa-1 shrink>
-          <h3 class="display-2 font-weight-medium">Joel Challis</h3>
-          <h4 class="display-1">Software Engineer</h4>
-        </v-flex>
-      </v-layout>
-    </v-img>
+    <v-img src="sticker.png" contain height="30em" position="right"/>
+
+    <h3 class="display-2 font-weight-medium">Joel Challis</h3>
+    <h4 class="display-1">Software Engineer</h4>
   </v-card>
 </template>
 
