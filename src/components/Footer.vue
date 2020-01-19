@@ -14,8 +14,7 @@
       </v-card-text>
 
       <v-card-actions class="secondary justify-center">
-        &copy; {{ new Date().getFullYear() }}&nbsp;-&nbsp;
-        <strong>zvecr.com</strong>
+        <strong><i class="far fa-copyright"></i> {{ new Date().getFullYear() }} - zvecr.com</strong>
       </v-card-actions>
     </v-card>
   </v-footer>
