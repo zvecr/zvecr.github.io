@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="temp">
     <app-header @menu="menu = true" />
     <app-menu v-model="menu" />
     <app-main />
@@ -30,7 +30,11 @@ export default {
 </script>
 
 <style>
-body {
-  font-family: "Roboto", sans-serif;
+.v-application,
+.v-application .display-1,
+.v-application .display-2,
+.v-application.temp .display-1,
+.v-application.temp .display-2 {
+  font-family: 'Roboto Mono', monospace !important;
 }
 </style>

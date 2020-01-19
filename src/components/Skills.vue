@@ -15,7 +15,7 @@
           <v-card-title class="justify-center primary--text">
             <div class="headline">{{skill.name}}</div>
           </v-card-title>
-          <v-btn color="orange" dark small absolute top right fab large>
+          <v-btn color="orange" dark absolute top right fab large>
             <v-icon>{{skill.icon}}</v-icon>
           </v-btn>
           <v-card-text class="primary--text">

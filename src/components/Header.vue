@@ -37,4 +37,8 @@ export default {
   z-index: 10;
   position: absolute;
 }
+.v-card {
+  background-image: url('/cubes.png');
+  background-repeat: repeat;
+}
 </style>

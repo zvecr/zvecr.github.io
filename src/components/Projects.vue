@@ -10,8 +10,12 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn text color="orange" v-if="project.link" :href="project.link">Visit</v-btn>
-            <v-btn text color="orange" :href="project.proj">View</v-btn>
+            <v-btn color="orange" dark rounded small v-if="project.proj" :href="project.proj">
+              <v-icon left>fab fa-github</v-icon> Github Repo
+            </v-btn>
+            <v-btn color="primary" dark rounded small v-if="project.link" :href="project.link">
+              Visit <v-icon right>fas fa-arrow-circle-right</v-icon>
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -33,7 +37,7 @@ export default {
         },
         {
           name: 'QMK Firmware',
-          desc: 'Recent QMK Member. Contributions including CI improvements, ARM split project, porting new/existing hardware, updating legacy code and style conformance, and bugfixes, as well as providing general QMK support to end users.',
+          desc: 'QMK Member. Contributions including CI improvements, ARM split project, porting new/existing hardware, updating legacy code and style conformance, and bugfixes, as well as providing general QMK support to end users.',
           proj: 'https://github.com/qmk/qmk_firmware/pulls/zvecr',
         },
         {
@@ -44,11 +48,11 @@ export default {
         {
           name: 'split_blackpill Keyboard',
           desc: 'Split ortho_4x12 ARM mechanical keyboard. Produced with KiCad, OSH coming soon!',
-          proj: 'https://zvecr.bigcartel.com/product/split_blackpill',
+          link: 'https://zvecr.bigcartel.com/product/split_blackpill',
         },
         {
           name: 'vue-scxml-router',
-          desc: 'Work-in-Progress. vue-scxml-router is state machine based router for Vue.js. It integrates with Vue.js to support well defined and predictable user navigation.',
+          desc: 'Work-in-Progress. vue-scxml-router is state machine based router for Vue.js. It integrates with Vue.js to provide well defined and predictable user navigation.',
           proj: 'https://github.com/zvecr/vue-scxml-router',
         },
         {
