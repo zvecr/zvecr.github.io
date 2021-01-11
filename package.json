@@ -26,7 +26,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "remark-cli": "^7.0.1",
     "remark-preset-lint-recommended": "^3.0.3",
-    "sass": "^1.25.0",
+    "sass": "^1.32.2",
     "sass-loader": "^8.0.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
